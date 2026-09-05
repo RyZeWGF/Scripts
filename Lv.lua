@@ -10,10 +10,10 @@ return (function(yE, QE, EE, mE, UE, YE, SE, sE, gE, qE, oE, XE, cE, GE, IE, wE,
 	local V = pcall;
 -- =========================
 -- ALL REGISTER PATCHES
--- replaces 11050125 -> 220066110
+-- replaces 11050125 -> 3959677
 -- =========================
 local __manual_from = 11050125
-local __manual_to = 220066110
+local __manual_to = 3959677
 local function __manual_patch_reg(pc, op, reg, Pj)
 	if type(Pj[reg]) == 'number' and Pj[reg] == __manual_from then
 		print("🔁 MANUAL PATCH PC='" .. tostring(pc) .. "' OP='" .. tostring(op) .. "' REG='" .. tostring(reg) .. "' OLD='" .. tostring(Pj[reg]) .. "' NEW='" .. tostring(__manual_to) .. "'")
